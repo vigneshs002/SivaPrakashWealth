@@ -345,7 +345,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg);
+    background: linear-gradient(rgba(1, 95, 201, 0.92), rgba(22, 36, 61, 0.78)), url(../img/bg-breadcrumb.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -886,4 +886,45 @@
 }
 /*** copyright end ***/
 
+/*** Sivaprakash Wealth — layout & consistency ***/
+@media (min-width: 992px) {
+    .navbar .navbar-nav {
+        background: var(--bs-white) !important;
+        box-shadow: 0 0.125rem 0.75rem rgba(22, 36, 61, 0.08);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header-carousel .header-carousel-item {
+        height: auto !important;
+        min-height: 0;
+        padding-bottom: 4rem;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption {
+        position: relative;
+        height: auto;
+        min-height: 0;
+        padding: 5rem 0 2.5rem;
+    }
+
+    .header-carousel .owl-nav .owl-prev,
+    .header-carousel .owl-nav .owl-next {
+        bottom: 0.75rem;
+    }
+}
+
+.feature.bg-light .feature-item {
+    border: 1px solid rgba(22, 36, 61, 0.06);
+}
+
+.footer .footer-item a {
+    display: block;
+}
+    border: 1px solid rgba(22, 36, 61, 0.06);
+}
+
+.footer .footer-item a {
+    display: block;
+}
 
