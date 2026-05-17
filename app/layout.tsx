@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Inter } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -18,6 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sivaprakashwealth.com"),
   title: {
     default: "Sivaprakash Wealth | LIC & Insurance Consultant Chennai",
     template: "%s | Sivaprakash Wealth",
@@ -37,15 +39,15 @@ export const metadata: Metadata = {
     title: "Sivaprakash Wealth | LIC & Insurance Consultant Chennai",
     description:
       "28+ years of LIC and general insurance consulting in Chennai. Free consultation: +91 98841 10537.",
-    url: "https://sivaprakashwealth.in",
-    images: [{ url: "https://sivaprakashwealth.in/img/carousel-2.png" }],
+    url: "https://sivaprakashwealth.com",
+    images: [{ url: "https://sivaprakashwealth.com/img/carousel-2.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sivaprakash Wealth | LIC & Insurance Consultant Chennai",
     description:
       "28+ years of LIC and general insurance consulting in Chennai. Free consultation: +91 98841 10537.",
-    images: ["https://sivaprakashwealth.in/img/carousel-2.png"],
+    images: ["https://sivaprakashwealth.com/img/carousel-2.png"],
   },
 };
 
@@ -56,11 +58,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": ["LocalBusiness", "InsuranceAgency"],
-      "@id": "https://sivaprakashwealth.in/#business",
+      "@id": "https://sivaprakashwealth.com/#business",
       name: "Sivaprakash Wealth",
       description:
         "LIC and general insurance consulting in Chennai. 28+ years of experience helping families and businesses with life cover, health plans, and claims support.",
-      url: "https://sivaprakashwealth.in",
+      url: "https://sivaprakashwealth.com",
       telephone: "+919884110537",
       email: "licsivaprakash.98@gmail.com",
       founder: { "@type": "Person", name: "C. Sivaprakash" },
@@ -100,18 +102,18 @@ const jsonLd = {
         ],
       },
       sameAs: ["https://wa.me/919884110537"],
-      image: "https://sivaprakashwealth.in/img/carousel-1.png",
+      image: "https://sivaprakashwealth.com/img/carousel-1.png",
     },
     {
       "@type": "WebSite",
-      "@id": "https://sivaprakashwealth.in/#website",
-      url: "https://sivaprakashwealth.in",
+      "@id": "https://sivaprakashwealth.com/#website",
+      url: "https://sivaprakashwealth.com",
       name: "Sivaprakash Wealth",
       description: "LIC and general insurance consulting in Chennai",
-      publisher: { "@id": "https://sivaprakashwealth.in/#business" },
+      publisher: { "@id": "https://sivaprakashwealth.com/#business" },
       potentialAction: {
         "@type": "SearchAction",
-        target: { "@type": "EntryPoint", urlTemplate: "https://sivaprakashwealth.in/blog?q={search_term_string}" },
+        target: { "@type": "EntryPoint", urlTemplate: "https://sivaprakashwealth.com/blog?q={search_term_string}" },
         "query-input": "required name=search_term_string",
       },
     },
@@ -151,6 +153,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <Analytics />
       </body>
     </html>
   );

@@ -30,13 +30,13 @@ export async function POST(req: NextRequest) {
     const resend = new Resend(resendKey);
 
     await resend.emails.send({
-      from: "website@sivaprakashwealth.in",
+      from: "website@sivaprakashwealth.com",
       to: toEmail,
       replyTo: email,
       subject: `[Newsletter] New subscriber: ${email}`,
       html: `
         <h2>New newsletter subscriber</h2>
-        <p>Someone subscribed to updates from <strong>sivaprakashwealth.in</strong>.</p>
+        <p>Someone subscribed to updates from <strong>sivaprakashwealth.com</strong>.</p>
         <table style="border-collapse:collapse;width:100%;max-width:480px">
           <tr>
             <td style="padding:8px;border:1px solid #eee;font-weight:bold">Email</td>

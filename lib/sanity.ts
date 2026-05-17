@@ -54,12 +54,12 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
   return post ?? null;
 }
 
-export async function getAllPostSlugs(): Promise<string[]> {
+export async function getAllPostSlugs(): Promise<{ slug: string; publishedAt: string }[]> {
   if (!isSanityConfigured) return [];
-  const posts = await sanityClient.fetch<{ slug: { current: string } }[]>(
-    `*[_type == "post"]{ slug }`,
+  const posts = await sanityClient.fetch<{ slug: { current: string }; publishedAt: string }[]>(
+    `*[_type == "post"]{ slug, publishedAt }`,
     {},
     { next: { revalidate: 3600 } }
   );
-  return posts.map((p: { slug: { current: string } }) => p.slug.current);
+  return posts.map((p) => ({ slug: p.slug.current, publishedAt: p.publishedAt }));
 }

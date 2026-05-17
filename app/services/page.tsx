@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Insurance Services — Sivaprakash Wealth Chennai",
     description:
       "Life insurance, health plans, corporate group cover, and retirement planning — all under one roof in Chennai.",
-    images: [{ url: "https://sivaprakashwealth.in/img/blog-1.png" }],
+    images: [{ url: "https://sivaprakashwealth.com/img/blog-1.png" }],
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "About Sivaprakash Wealth — Trusted LIC Advisor in Chennai",
     description:
       "28+ years of insurance advisory experience in Chennai. Personalised LIC and health insurance guidance for individuals and businesses.",
-    images: [{ url: "https://sivaprakashwealth.in/img/about-1.png" }],
+    images: [{ url: "https://sivaprakashwealth.com/img/about-1.png" }],
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Insurance FAQs — Sivaprakash Wealth Chennai",
     description:
       "Common questions about LIC, health insurance, premiums, tax savings, and claim processes answered clearly.",
-    images: [{ url: "https://sivaprakashwealth.in/img/carousel-2.png" }],
+    images: [{ url: "https://sivaprakashwealth.com/img/carousel-2.png" }],
   },
 };
 

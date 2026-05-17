@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Contact Sivaprakash Wealth — Free Insurance Consultation",
     description:
       "Book a free consultation today. Call, WhatsApp, or email — we're based in Chennai and happy to help.",
-    images: [{ url: "https://sivaprakashwealth.in/img/contact-img.png" }],
+    images: [{ url: "https://sivaprakashwealth.com/img/contact-img.png" }],
   },
 };
 
