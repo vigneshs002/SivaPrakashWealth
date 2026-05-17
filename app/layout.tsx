@@ -44,9 +44,23 @@ export const metadata: Metadata = {
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
+// #region agent log H2/H3 - server-side request log (visible in Vercel function logs)
+function logRequest() {
+  console.log(
+    "[debug-5566ee] layout rendered at",
+    new Date().toISOString(),
+    "| env:", process.env.NODE_ENV,
+    "| hypothesisId: H2_H3"
+  );
+}
+// #endregion
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  // #region agent log H2/H3
+  logRequest();
+  // #endregion
   return (
     <html lang="en" className={`${dmSans.variable} ${inter.variable} scroll-smooth`}>
       <head>
