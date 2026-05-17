@@ -40,6 +40,13 @@ export const metadata: Metadata = {
     url: "https://sivaprakashwealth.in",
     images: [{ url: "https://sivaprakashwealth.in/img/carousel-2.png" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sivaprakash Wealth | LIC & Insurance Consultant Chennai",
+    description:
+      "28+ years of LIC and general insurance consulting in Chennai. Free consultation: +91 98841 10537.",
+    images: ["https://sivaprakashwealth.in/img/carousel-2.png"],
+  },
 };
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID;

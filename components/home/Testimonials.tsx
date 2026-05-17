@@ -3,26 +3,28 @@
 import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
 import { Star } from "lucide-react";
 
 const testimonials = [
   {
     name: "Lakshmi R.",
     role: "Homemaker, Anna Nagar",
-    img: "/img/testimonial-1.jpg",
+    initials: "LR",
+    color: "bg-rose-100 text-rose-700",
     text: "Mr Sivaprakash explained our LIC policies in simple Tamil and English, compared two options without pressure, and helped us increase our term cover within budget. Maturity paperwork was also handled smoothly.",
   },
   {
     name: "Karthik S.",
     role: "Small business owner, Chennai",
-    img: "/img/testimonial-2.jpg",
+    initials: "KS",
+    color: "bg-emerald-100 text-emerald-700",
     text: "For our team he arranged a group health policy that actually matched our headcount and budget. Claims follow-up was proactive — he coordinated with the TPA until the hospital bill was settled.",
   },
   {
     name: "Dr. Priya M.",
     role: "Physician, Chennai",
-    img: "/img/testimonial-3.jpg",
+    initials: "PM",
+    color: "bg-violet-100 text-violet-700",
     text: "Professional, punctual, and ethical. He reviewed my old endowment plans, showed what was working and what was not, and suggested a cleaner mix for retirement without upselling products I did not need.",
   },
 ];
@@ -60,13 +62,8 @@ export default function Testimonials() {
               <div key={i} className="flex-none w-full px-2">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-sm max-w-3xl mx-auto">
                   <div className="grid grid-cols-3 sm:grid-cols-4">
-                    <div className="relative h-full min-h-[160px] bg-gray-100">
-                      <Image
-                        src={t.img}
-                        alt={t.name}
-                        fill
-                        className="object-cover"
-                      />
+                    <div className={`flex items-center justify-center min-h-[160px] ${t.color}`}>
+                      <span className="text-3xl font-bold">{t.initials}</span>
                     </div>
                     <div className="col-span-2 sm:col-span-3 p-6 flex flex-col justify-center">
                       <h4 className="font-bold text-gray-900 text-lg">{t.name}</h4>

@@ -39,10 +39,10 @@ export default function Navbar() {
             </a>
           </div>
           <div className="flex items-center gap-3 text-sm text-gray-500">
-            <span>Follow us:</span>
-            {["Facebook", "Twitter", "Instagram", "LinkedIn"].map((s) => (
-              <a key={s} href="#" className="text-primary hover:opacity-70 transition-opacity text-xs font-medium">{s}</a>
-            ))}
+            <span>Contact:</span>
+            <a href="https://wa.me/919884110537" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-70 transition-opacity text-xs font-medium">WhatsApp</a>
+            <span className="text-slate-300">·</span>
+            <a href="mailto:licsivaprakash.98@gmail.com" className="text-primary hover:opacity-70 transition-opacity text-xs font-medium">Email</a>
           </div>
         </div>
       </div>
