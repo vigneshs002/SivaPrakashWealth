@@ -38,7 +38,7 @@ const slides: Slide[] = [
     imgAlt: "Insurance consulting for families and businesses in Chennai",
     ctas: [
       { href: "/contact", label: "Get your free consultation", icon: "phone" },
-      { href: "/contact", label: "WhatsApp us", icon: "whatsapp", outline: true },
+      { href: "https://wa.me/919884110537", label: "WhatsApp us", icon: "whatsapp", outline: true },
     ],
     imgLeft: false,
   },

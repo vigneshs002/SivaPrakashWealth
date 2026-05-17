@@ -51,6 +51,73 @@ export const metadata: Metadata = {
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "InsuranceAgency"],
+      "@id": "https://sivaprakashwealth.in/#business",
+      name: "Sivaprakash Wealth",
+      description:
+        "LIC and general insurance consulting in Chennai. 28+ years of experience helping families and businesses with life cover, health plans, and claims support.",
+      url: "https://sivaprakashwealth.in",
+      telephone: "+919884110537",
+      email: "licsivaprakash.98@gmail.com",
+      founder: { "@type": "Person", name: "C. Sivaprakash" },
+      foundingDate: "1998",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Plot No.4, Balamurugan Road, Teacher's Modern Town, Vadagarai",
+        addressLocality: "Chennai",
+        addressRegion: "Tamil Nadu",
+        postalCode: "600052",
+        addressCountry: "IN",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 13.0827,
+        longitude: 80.2707,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          opens: "09:00",
+          closes: "18:00",
+        },
+      ],
+      priceRange: "Free consultation",
+      areaServed: { "@type": "City", name: "Chennai" },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Insurance Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "LIC Life Insurance Advisory" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Health Insurance Planning" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Corporate Group Insurance" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Child & Retirement Planning" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Free Policy Health Check" } },
+        ],
+      },
+      sameAs: ["https://wa.me/919884110537"],
+      image: "https://sivaprakashwealth.in/img/carousel-1.png",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sivaprakashwealth.in/#website",
+      url: "https://sivaprakashwealth.in",
+      name: "Sivaprakash Wealth",
+      description: "LIC and general insurance consulting in Chennai",
+      publisher: { "@id": "https://sivaprakashwealth.in/#business" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: { "@type": "EntryPoint", urlTemplate: "https://sivaprakashwealth.in/blog?q={search_term_string}" },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -58,6 +125,10 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} ${inter.variable} scroll-smooth`}>
       <head>
         <link rel="icon" href="/img/favicon.png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="min-h-screen flex flex-col font-sans antialiased">
         {gaId && gaId !== "G-XXXXXXXXXX" && (

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Shield, MapPin, Mail, Phone } from "lucide-react";
+import NewsletterForm from "./NewsletterForm";
 
 const usefulLinks = [
   { href: "/about", label: "About Us" },
@@ -86,19 +87,9 @@ export default function Footer() {
             <p className="text-slate-400 text-sm mb-4">
               Stay updated with the latest insurance tips and offers.
             </p>
-            <form className="flex gap-2 mb-5">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 bg-slate-800 border border-slate-700 rounded-full px-4 py-2 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-primary"
-              />
-              <button
-                type="submit"
-                className="bg-primary text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-primary/90 transition-colors whitespace-nowrap"
-              >
-                Sign Up
-              </button>
-            </form>
+            <div className="mb-5">
+              <NewsletterForm />
+            </div>
             <div className="flex items-center gap-3">
               <a
                 href="tel:+919884110537"
