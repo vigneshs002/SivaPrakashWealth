@@ -5,7 +5,7 @@ export const faqs: { q: string; a: string }[] = [
   },
   {
     q: "How can I schedule a consultation?",
-    a: "Call or WhatsApp +91 98841 10537, email licsivaprakash.98@gmail.com, or use the contact form. The first discussion to understand your needs is without charge.",
+    a: "Call or WhatsApp +91 98841 10537, email us via the contact form, or visit the contact page. The first discussion to understand your needs is without charge.",
   },
   {
     q: "Do you offer corporate insurance consulting?",

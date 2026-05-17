@@ -132,7 +132,7 @@ export default function Footer() {
                 href="mailto:licsivaprakash.98@gmail.com"
                 className="text-slate-400 text-sm hover:text-primary transition-colors underline"
               >
-                licsivaprakash.98@gmail.com
+                Email us
               </a>
             </div>
           </div>

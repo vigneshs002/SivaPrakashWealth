@@ -33,7 +33,7 @@ const slides: Slide[] = [
     tag: "Sivaprakash Wealth",
     title: "LIC & General Insurance Consulting You Can Rely On",
     body: "With 28+ years of experience I have worked in insurance consultancy across LIC (life insurance) and general insurance, helping families and businesses choose cover that fits their goals. At Sivaprakash Wealth my aim is simple: the best possible advice for your situation — clear options, honest comparisons, and support when you need to claim or renew.",
-    sub: "Contact us today for a free consultation. Call +91 98841 10537 or write to licsivaprakash.98@gmail.com",
+    sub: "Contact us today for a free consultation. Call +91 98841 10537 or email us.",
     img: "/img/carousel-1.png",
     imgAlt: "Insurance consulting for families and businesses in Chennai",
     ctas: [
@@ -106,7 +106,7 @@ export default function Hero() {
                       </a>{" "}
                       or write to{" "}
                       <a href="mailto:licsivaprakash.98@gmail.com" className="underline text-white hover:text-blue-100">
-                        licsivaprakash.98@gmail.com
+                        email us
                       </a>
                     </p>
                   )}

@@ -35,7 +35,7 @@ export default function Navbar() {
               <span className="text-primary">📍</span> Chennai
             </Link>
             <a href="mailto:licsivaprakash.98@gmail.com" className="flex items-center gap-1 hover:text-primary transition-colors">
-              <span className="text-primary">✉</span> licsivaprakash.98@gmail.com
+              <span className="text-primary">✉</span> Email us
             </a>
           </div>
           <div className="flex items-center gap-3 text-sm text-gray-500">
