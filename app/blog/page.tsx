@@ -6,9 +6,17 @@ import BlogCard from "@/components/blog/BlogCard";
 import { getAllPosts } from "@/lib/sanity";
 
 export const metadata: Metadata = {
-  title: "Insurance Tips & Planning Articles | Blog",
+  title: "LIC & Insurance Planning Articles — Sivaprakash Wealth",
   description:
     "Expert articles on LIC planning, health cover, tax-saving, and business insurance from C. Sivaprakash — Chennai's trusted advisor since 1998.",
+  keywords: [
+    "LIC insurance tips",
+    "health insurance advice India",
+    "tax saving insurance 80C",
+    "best LIC plans 2026",
+    "insurance planning blog Chennai",
+  ],
+  alternates: { canonical: "/blog" },
 };
 
 const placeholderPosts = [

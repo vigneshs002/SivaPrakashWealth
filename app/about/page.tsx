@@ -2,9 +2,17 @@ import type { Metadata } from "next";
 import AboutContent from "./AboutContent";
 
 export const metadata: Metadata = {
-  title: "About Us — 28+ Years of LIC Experience in Chennai",
+  title: "C. Sivaprakash — LIC Advisor in Chennai Since 1998",
   description:
     "Meet C. Sivaprakash, Chennai's trusted LIC advisor since 1998. 28+ years helping families and businesses with life cover, health insurance, and claim support.",
+  keywords: [
+    "LIC advisor Chennai",
+    "C Sivaprakash insurance",
+    "LIC agent since 1998",
+    "experienced insurance advisor Chennai",
+    "Sivaprakash Wealth",
+  ],
+  alternates: { canonical: "/about" },
   openGraph: {
     title: "About Sivaprakash Wealth — Trusted LIC Advisor in Chennai",
     description:

@@ -14,6 +14,16 @@ export const metadata: Metadata = {
   title: "Sivaprakash Wealth | LIC & Insurance Consultant Chennai",
   description:
     "28+ years of LIC and general insurance consulting in Chennai. Free consultation: +91 98841 10537. Expert advice for families and businesses.",
+  keywords: [
+    "LIC agent Chennai",
+    "LIC insurance consultant Chennai",
+    "health insurance advisor Chennai",
+    "life insurance Chennai",
+    "general insurance Chennai",
+    "free insurance consultation Chennai",
+    "financial planning Chennai",
+  ],
+  alternates: { canonical: "/" },
 };
 
 export default function HomePage() {
