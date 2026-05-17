@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     const resend = new Resend(resendKey);
 
     await resend.emails.send({
-      from: "website@sivaprakashwealth.com",
+      from: "Sivaprakash Wealth <onboarding@resend.dev>",
       to: toEmail,
       replyTo: email,
       subject: `[Newsletter] New subscriber: ${email}`,
