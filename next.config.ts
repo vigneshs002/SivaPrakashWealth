@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // #region agent log H3 - redirect old static-HTML .html URLs to Next.js routes
   async redirects() {
     return [
       { source: "/index.html",       destination: "/",        permanent: true },
@@ -20,7 +19,6 @@ const nextConfig: NextConfig = {
       { source: "/contact.html",     destination: "/contact", permanent: true },
     ];
   },
-  // #endregion
 };
 
 export default nextConfig;

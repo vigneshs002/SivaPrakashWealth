@@ -1,16 +1,6 @@
 import Link from "next/link";
 
-// #region agent log H3 - which URLs trigger Next.js 404?
-async function logNotFound() {
-  // This runs server-side; log to console for Vercel function log visibility
-  const info = { message: "Next.js not-found rendered", timestamp: Date.now(), hypothesisId: "H3" };
-  console.log("[debug-5566ee] not-found page hit:", JSON.stringify(info));
-}
-// #endregion
-
-export default async function NotFoundPage() {
-  await logNotFound();
-
+export default function NotFoundPage() {
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-20">
       <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
